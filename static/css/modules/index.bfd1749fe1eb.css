@@ -8,6 +8,12 @@ body ul {
 body {
   overflow: hidden;
 }
+canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -2;
+}
 nav {
   padding: 0 10px;
   height: 80px;
@@ -116,13 +122,6 @@ to {
 }
 }
 
-canvas {
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -2;
-}
-
 .menu {
   position: absolute;
   top: 50%;
@@ -159,7 +158,7 @@ canvas {
   transition: transform 1.5s, border 1.5s;
   transition: transform 1.5s, border 1.5s, -webkit-transform 1.5s;
   border: solid 3px #ffffff;
-  border: solid 3px rgba(255, 255, 255, .8);
+  border: solid 3px rgba(255, 255, 255, .5);
   -webkit-border-radius: 50%;
           border-radius: 50%;
 }
@@ -194,7 +193,7 @@ canvas {
   transition: transform 1.5s, border 1.5s;
   transition: transform 1.5s, border 1.5s, -webkit-transform 1.5s;
   border: solid 3px #ffffff;
-  border: solid 3px rgba(255, 255, 255, .8);
+  border: solid 3px rgba(255, 255, 255, .5);
   -webkit-border-radius: 50%;
           border-radius: 50%;
 }
@@ -229,7 +228,7 @@ canvas {
   transition: transform 1.5s, border 1.5s;
   transition: transform 1.5s, border 1.5s, -webkit-transform 1.5s;
   border: solid 3px #ffffff;
-  border: solid 3px rgba(255, 255, 255, .8);
+  border: solid 3px rgba(255, 255, 255, .5);
   -webkit-border-radius: 50%;
           border-radius: 50%;
 }
@@ -264,7 +263,7 @@ canvas {
   transition: transform 1.5s, border 1.5s;
   transition: transform 1.5s, border 1.5s, -webkit-transform 1.5s;
   border: solid 3px #ffffff;
-  border: solid 3px rgba(255, 255, 255, .8);
+  border: solid 3px rgba(255, 255, 255, .5);
   -webkit-border-radius: 50%;
           border-radius: 50%;
 }
@@ -299,7 +298,7 @@ canvas {
   transition: transform 1.5s, border 1.5s;
   transition: transform 1.5s, border 1.5s, -webkit-transform 1.5s;
   border: solid 3px #ffffff;
-  border: solid 3px rgba(255, 255, 255, .8);
+  border: solid 3px rgba(255, 255, 255, .5);
   -webkit-border-radius: 50%;
           border-radius: 50%;
 }
@@ -334,7 +333,7 @@ canvas {
   transition: transform 1.5s, border 1.5s;
   transition: transform 1.5s, border 1.5s, -webkit-transform 1.5s;
   border: solid 3px #ffffff;
-  border: solid 3px rgba(255, 255, 255, .8);
+  border: solid 3px rgba(255, 255, 255, .5);
   -webkit-border-radius: 50%;
           border-radius: 50%;
 }
@@ -374,33 +373,39 @@ ul li.rotater {
             box-sizing: border-box;
     border: solid 3px #ffffff;
     border: solid 3px rgba(255, 255, 255, .3);
-    -webkit-transition: border 1.5s cubic-bezier(0.41, 0.9, 0.57, 1.07);
-    transition: border 1.5s cubic-bezier(0.41, 0.9, 0.57, 1.07);
+    -webkit-transition: border 1.5s cubic-bezier(0.04, 0.71, 0.05, 0.82);
+    transition: border 1.5s cubic-bezier(0.04, 0.71, 0.05, 0.82);
 }
 ul li.rotater a {
       top: -86px;
       width: 0;
       height: 0;
+      overflow: hidden;
       text-align: center;
       text-decoration: none;
       line-height: 86px;
       cursor: pointer;
-      -webkit-transition: -webkit-transform 2s;
-      transition: -webkit-transform 2s;
-      transition: transform 2s;
-      transition: transform 2s, -webkit-transform 2s;
+      -webkit-transition: all 2s;
+      transition: all 2s;
       -webkit-transform: translateX(0);
           -ms-transform: translateX(0);
               transform: translateX(0);
 }
 ul li.rotater a:hover {
+        border-color: #fff !important;
         background: #c8c8c8;
-        background: rgba(200, 200, 200, .3);
+        background: rgba(200, 200, 200, .5);
+}
+ul li.rotater a:hover .ico {
+          display: none;
 }
 ul li.rotater a:hover span {
           font-weight: bold;
+          display: block;
+          font-size: 1.5em;
+          text-shadow: 0 0 2px #fff;
 }
-ul li.rotater a .ico, ul li.rotater a span {
+ul li.rotater a .ico {
         -webkit-transition: color 3s;
         transition: color 3s;
         color: #fff;
@@ -408,6 +413,9 @@ ul li.rotater a .ico, ul li.rotater a span {
         opacity: 0;
         z-index: -10;
         cursor: pointer;
+        filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="1" /></filter></svg>#filter');
+        -webkit-filter: blur(1px);
+                filter: blur(1px);
         -webkit-transition: opacity 800ms, z-index 300ms, -webkit-transform 1s;
         transition: opacity 800ms, z-index 300ms, -webkit-transform 1s;
         transition: opacity 800ms, z-index 300ms, transform 1s;
@@ -417,8 +425,10 @@ ul li.rotater a .ico, ul li.rotater a span {
                 transform: translateX(0);
 }
 ul li.rotater a span {
+        display: none;
         font-family: 'Handlee';
-        opacity: .1;
+        color: #ffffff;
+        color: rgba(255, 255, 255, .8);
 }
 ul li.rotater a i:before {
         display: inline-block;
@@ -632,4 +642,4 @@ to {
     right: 1px;
 }
 
-/*# sourceMappingURL=index.e1022041ca91.css.map*/
+/*# sourceMappingURL=index.bfd1749fe1eb.css.map*/
