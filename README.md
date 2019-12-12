@@ -1,13 +1,5 @@
-# lencx.github.io
-> 👻   Life's attitude to you depends on your attitude to it.
+# lencx
 
-## link
-- [home](https://lencx.github.io/)
-- [blog](https://lencx.github.io/blog/)
-- [github](https://github.com/lencx)
-- hazy
-
-  > [TODO list](https://lencx.github.io/todo/)
-
-- leisure (暂不可访问)
-- [about](https://lencx.github.io/blog/about/)
+* [blog](https://nofwl.com)
+* [github](https://github.com/lencx)
+* <a href="mailto:cxin1314@gmail.com">email</a>
