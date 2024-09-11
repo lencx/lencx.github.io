@@ -1,5 +1,3 @@
-# lencx
-
 <p>
   <img src="https://emojis.slackmojis.com/emojis/images/1588866973/8934/hellokittydance.gif?1588866973" alt="Hi" width="42" />
   <b>{折腾 ⇌ 迷茫 ⇌ 思考]ing，在路上...</b>
