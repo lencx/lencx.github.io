@@ -10,7 +10,7 @@
 [![公众号](https://img.shields.io/badge/公众号-浮之静-%23323031?style=flat&labelColor=323031)](https://mp.weixin.qq.com/s/K9UtoDSL2mMh_hWm-xPPtg)
 [![dev.to](https://img.shields.io/badge/-lencx-%23323031?style=flat&logo=dev.to)](https://dev.to/lencx)
 [![chat](https://img.shields.io/badge/chat-discord-blue?style=flat&logo=discord)](https://discord.gg/aPhCRf4zZr)
-[![twitter](https://img.shields.io/badge/follow-lencx__-blue?style=flat&logo=Twitter)](https://twitter.com/lencx_)
+[![twitter](https://img.shields.io/badge/follow-lencx__-blue?style=flat&logo=X)](https://twitter.com/lencx_)
 [![reddit](https://img.shields.io/badge/-lencx-%23323031?style=flat&logo=reddit)](https://www.reddit.com/user/lencx)
 [![youtube](https://img.shields.io/youtube/channel/subscribers/UC__gTZL-OZKDPic7s_6Ntgg?style=social)](https://www.youtube.com/@lencx)\
 ![HTML5](https://img.shields.io/badge/-HTML5-%23E34C26?style=flat&logo=html5&logoColor=ffffff)
