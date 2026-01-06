@@ -27,7 +27,7 @@
 
 ## Projects
 
-- [Noi](https://github.com/lencx/Noi): 🚀 Power Your World with AI - Explore, Extend, Empower.
+- [Noi](https://github.com/lencx/Noi): 🚀 Less chaos. More flow.
 - [ChatGPT](https://github.com/lencx/ChatGPT): 🔮 ChatGPT Desktop Application (Mac, Windows and Linux)
 - [rsw](https://github.com/rwasm/rsw-rs): 🦞 wasm-pack based build tool
 - [gg](https://github.com/lencx/gg): 🦄 GG (Gatsby + GitHub) - A gatsby website builder based on github discussions
